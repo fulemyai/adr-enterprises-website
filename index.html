@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ADR Enterprise</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+
+    <!-- Material design iconic font CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/material-design-iconic-font.min.css">
+
+    <!-- Ionicons CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/flaticon.min.css">
+
+    <!-- Swiper slider CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/swiper.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+
+    <!-- Light gallery CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/lightgallery.min.css">
+
+
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from avobe) -->
+    <!--
+	<link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+	<link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    -->
+
+
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!--====================  header area ====================-->
+    <div class="header-area header-sticky header-sticky--default">
+        <div class="header-area__desktop header-area__desktop--default">
+            <!--=======  header top bar  =======-->
+            <div class="header-top-bar">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <!-- top bar left -->
+                            <div class="top-bar-left-wrapper">
+                                <div class="social-links social-links--white-topbar d-inline-block">
+                                    <ul>
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-linkedin-box"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <!-- top bar right -->
+                            <div class="top-bar-right-wrapper">
+
+                                <a href="contact.html" class="ht-btn ht-btn--default d-inline-block">GET A QUOTE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=======  End of header top bar  =======-->
+            <!--=======  header info area  =======-->
+            <div class="header-info-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="header-info-wrapper align-items-center">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img width="178" height="39" src="assets/img/logo/logo.png" class="img-fluid"
+                                            alt="">
+                                    </a>
+                                </div>
+
+                                <!-- header contact info -->
+                                <div class="header-contact-info">
+                                    <div class="header-info-single-item">
+                                        <div class="header-info-single-item__icon">
+                                            <i class="zmdi zmdi-smartphone-android"></i>
+                                        </div>
+                                        <div class="header-info-single-item__content">
+                                            <h6 class="header-info-single-item__title">Phone</h6>
+                                            <p class="header-info-single-item__subtitle">+91 98190 89299</p>
+                                        </div>
+                                    </div>
+                                    <div class="header-info-single-item">
+                                        <div class="header-info-single-item__icon">
+                                            <i class="zmdi zmdi-home"></i>
+                                        </div>
+                                        <div class="header-info-single-item__content">
+                                            <h6 class="header-info-single-item__title">Address</h6>
+                                            <p class="header-info-single-item__subtitle">Sai Baba Nagar
+                                                Borivali (W), Mumbai- 400092</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- mobile menu -->
+                                <div class="mobile-navigation-icon" id="mobile-menu-trigger">
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=======  End of header info area =======-->
+            <!--=======  header navigation area  =======-->
+            <div class="header-navigation-area default-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- header navigation -->
+                            <div class="header-navigation header-navigation--header-default position-relative">
+                                <div class="header-navigation__nav position-static">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">HOME</a>
+                                            </li>
+                                            <li><a href="about.html">ABOUT US</a></li>
+
+                                            <li class="has-children has-children--multilevel-submenu">
+                                                <a href="our products.html">OUR PRODUCTS</a>
+                                                <ul class="submenu">
+                                                    <li><a href="RMC.html">RMC</a></li>
+                                                    <li><a href="TMT.html">TMT</a>
+                                                    </li>
+                                                    <li><a href="AAC BLOCKS.html">
+                                                            AAC BLOCKS</a></li>
+                                                    <li><a href="LED LIGHTS.html">
+                                                            LED LIGHTS</a></li>
+                                                    <li><a href="REMOTE CONTROL SWITCH.html">
+                                                            REMOTE CONTROL SWITCH </a></li>
+                                                    <li><a href="WIRES.html">
+                                                            WIRES </a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact.html">CONTACT US</a> </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--=======  End of header navigation area =======-->
+        </div>
+    </div>
+    <!--====================  End of header area  ====================-->
+    <!--====================  hero slider area ====================-->
+    <div class="hero-alider-area">
+        <div class="hero-slider__container-area">
+            <div class="swiper-container hero-slider__container">
+                <div class="swiper-wrapper hero-slider__wrapper">
+                    <!--=======  single slider item  =======-->
+
+                    <div class="swiper-slide hero-slider__single-item bg-img" data-bg="assets/img/slider/slider3.webp">
+                        <div class="hero-slider__content-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hero-slider__content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=======  End of single slider item  =======-->
+                    <!--=======  single slider item  =======-->
+
+                    <div class="swiper-slide hero-slider__single-item bg-img" data-bg="assets/img/slider/slider2.webp">
+                        <div class="hero-slider__content-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hero-slider__content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=======  End of single slider item  =======-->
+                    <!--=======  single slider item  =======-->
+
+                    <div class="swiper-slide hero-slider__single-item bg-img" data-bg="assets/img/slider/slider1.webp">
+                        <div class="hero-slider__content-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="hero-slider__content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=======  End of single slider item  =======-->
+
+                </div>
+            </div>
+            <div class="ht-swiper-button-prev ht-swiper-button-prev-13 ht-swiper-button-nav d-none d-xl-block"><i
+                    class="ion-ios-arrow-left"></i></div>
+            <div class="ht-swiper-button-next ht-swiper-button-next-13 ht-swiper-button-nav d-none d-xl-block"><i
+                    class="ion-ios-arrow-forward"></i></div>
+        </div>
+    </div>
+    <!--====================  End of hero slider area  ====================-->
+    <!--About section start-->
+    <div class="about-section section-space--inner--bottom--120" style="margin-top:150px;">
+        <div class="container">
+            <div class="row row-25 align-items-center">
+
+                <div class="col-lg-6 col-12 mb-30">
+                    <div class="about-image-two">
+                        <img width="560" height="490" src="assets/img/about/about-3.jpg" alt=""
+                            style="height:420px; margin-top:-100px;">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 mb-30">
+                    <div class="about-content-two">
+                        <h3 style="color:#f0542d;">Welcome to ADR(Atithi Devo Roop) Enterprise</h3>
+                        <h1>Professional Approach</h1>
+                        <p>"Team includes experience staff like Plant In-charges, Lab Technicians, Field
+                            Technicians, experienced Plant Operation and Maintenance Team, having bright and
+                            innovative minds.<br><br>
+                            "Professional Approach towards delivering Best Ready Mixed Concrete with available
+                            resources and Best services using all the latest machineries and technologies.</p>
+                        <h3>What is Ready Mix Concrete for Us?</h3>
+                        <p>"For ADR RMC, the Ready Mixed Concrete is a controlled concrete manufactured by optimised
+                            Mix-designs at batching plant following all relative Indian Standards and requirements
+                            by Clients with least Pollution contribution to the Environment.<br><br>
+                            "For ADR RMC, the Quality Process starts from the point of receiving the raw materials
+                            to the final achievement of the strength and durability of concrete after delivery.
+                        </p>
+                        <a href="about.html" class="ht-btn--default ht-btn--default--dark-hover section-space--top--20"
+                            style="margin-top:-70px;">About Us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--About section end-->
+    <!--====================  team member area ====================-->
+    <div class="team-member-area section-space--inner--120" style="margin-top:-50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area text-center">
+                        <h2 class="section-title section-space--bottom--50">Our Team <span class="title-icon"></span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="team-member-wrapper">
+                        <div class="row">
+                            <!--Team start-->
+                            <div class="col-lg-4 col-sm-12 col-12 section-space--bottom--10">
+                                <div class="team" style="height:650px;">
+                                    <div class="image">
+                                        <img class="img-fluid" width="370" height="370" src="assets/img/team/team-1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="content" style="text-align:left;">
+                                        <h3>Sri D.L. DATTANI</h3>
+                                        <b>77 - YRS</b><br>
+                                        <b>CMD (Chairman & Managing Director)</b>
+                                        <p>Established In 1967 By Sri D.L.Dattani, As Pioneer Electronics
+                                            Kolkata.<br><br>
+                                            Experience in electrical, insulation, Iron Ore, Minerals, Coal, Yarn,
+                                            Agro Commodities, Maize Cattle Feed, Exporter, and Indenting Agent for
+                                            odd items. Since 6 decades.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Team end-->
+
+                            <!--Team start-->
+                            <div class="col-lg-4 col-sm-12 col-12 section-space--bottom--30">
+                                <div class="team" style="height:650px;">
+                                    <div class="image">
+                                        <img class="img-fluid" width="370" height="370" src="assets/img/team/team-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="content" style="text-align:left;">
+                                        <h3>Sri Hitesh Dattani</h3>
+                                        <b>46 - YRS</b><br>
+                                        <p>Established in 2018 by Sri Hitesh Dattani as ADR Enterprises,<br><br>
+                                            Experience in the field of Lighting electrical, Building material
+                                            ,Construction Products for more than 3 Decades,</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Team end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of team member area  ====================-->
+    <!--====================  service grid slider area ====================-->
+    <div class="service-grid-slider-area section-space--inner--120" style="margin-top:-60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area text-center">
+                        <h2 class="section-title section-space--bottom--50">Our Products <span
+                                class="title-icon"></span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-12" style="margin-top:-20px;">
+                    <div class="service-slider">
+                        <div class="swiper-container service-slider__container">
+                            <div class="swiper-wrapper service-slider__wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="RMC.html">
+                                                    <img width="370" height="450px;"
+                                                        src="assets/img/service/service1.jpg" class="img-fluid" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="RMC.html">RMC</a>
+                                            </h3>
+                                            <p class="subtitle">RMC is a specialized material in which cement,
+                                                aggregate, and other
+                                                ingredients are weight batched at a center batching plant, mixed either
+                                                at
+                                                the plant itself or in truck mixers, and then transported to the
+                                                construction.<br>
+                                                The technique is useful in congested sites or at diverse workplaces and
+                                                saves the consumer from the botheration of procurement, storage, and
+                                                handling of concrete materials.</p>
+                                            <a href="RMC.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="TMT.html">
+                                                    <img width="370" height="237" src="assets/img/service/service2.jpg"
+                                                        class="img-fluid" alt="" style="height:450px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="TMT.html">TMT</a>
+                                            </h3>
+                                            <p class="subtitle">TMT sector is an industry grouping that includes the
+                                                majority of companies focused on new technologies.There is a substantial
+                                                overlap between TMT and the 1990s idea of the new economy. </p>
+                                            <a href="TMT.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="AAC BLOCKS.html">
+                                                    <img width="370" height="237" src="assets/img/service/service3.jpg"
+                                                        class="img-fluid" alt="" style="height:450px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="AAC BLOCKS.html">AAC BLOCKS</a>
+                                            </h3>
+                                            <p class="subtitle">AAC block is a special type of concrete block made up of
+                                                fine aggregates, Portland cement, water, and another expansion agent
+                                                (Aluminum powder).</p>
+                                            <a href="AAC BLOCKS.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="LED LIGHTS.html">
+                                                    <img width="370" height="237" src="assets/img/service/service4.jpg"
+                                                        class="img-fluid" alt="" style="height:450px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="LED LIGHTS.html"> LED LIGHTS</a>
+                                            </h3>
+                                            <p class="subtitle">LEDs are made using p-n junctions. As electrons pass
+                                                through one crystal to the other they fill electron holes. They emit
+                                                photons (light). This is also how the semiconductor laser works.</p>
+                                            <a href="LED LIGHTS.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="REMOTE CONTROL SWITCH.html">
+                                                    <img width="370" height="237" src="assets/img/service/service5.jpg"
+                                                        class="img-fluid" alt="" style="height:450px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="REMOTE CONTROL SWITCH.html"> REMOTE CONTROL SWITCH </a>
+                                            </h3>
+                                            <p class="subtitle">Remote control switch allows you to control a device or
+                                                machine without the need for cables. This grants extra freedom of
+                                                movement without limiting yourself to the maximum length of a cable.</p>
+                                            <a href="REMOTE CONTROL SWITCH.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="service-grid-item">
+                                        <div class="service-grid-item__image">
+                                            <div class="service-grid-item__image-wrapper">
+                                                <a href="WIRES.html">
+                                                    <img width="370" height="237" src="assets/img/service/service6.jpg"
+                                                        class="img-fluid" alt="" style="height:450px;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="service-grid-item__content">
+                                            <h3 class="title" style="margin-top:-30px;">
+                                                <a href="WIRES.html"> WIRES </a>
+                                            </h3>
+                                            <p class="subtitle">Wire has the exposure and increased traffic needed to
+                                                ensure your project remains relevant. We aim to help companies increase
+                                                their credibility while gaining exposure to the global market. </p>
+                                            <a href="WIRES.html" class="see-more-link">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="ht-swiper-button-prev ht-swiper-button-prev-4 ht-swiper-button-nav"><i
+                                class="ion-ios-arrow-left"></i></div>
+                        <div class="ht-swiper-button-next ht-swiper-button-next-4 ht-swiper-button-nav"><i
+                                class="ion-ios-arrow-forward"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of service grid slider area  ====================-->
+    <!--====================  fun fact area ====================-->
+    <div class="funfact-section section-space--inner--100 bg-img" data-bg="assets/img/backgrounds/funfact-bg.jpg"
+        style="margin-top:60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="fun-fact-wrapper">
+                        <div class="row">
+
+                            <div class="single-fact col-md-3 col-6 section-space--bottom--30">
+                                <img width="60" height="60" src="assets/img/icons/funfact-project.webp" alt="">
+                                <h1 class="counter">598</h1>
+                                <h4>Project</h4>
+                            </div>
+
+                            <div class="single-fact col-md-3 col-6 section-space--bottom--30">
+                                <img width="43" height="60" src="assets/img/icons/funfact-clients.webp" alt="">
+                                <h1 class="counter">128</h1>
+                                <h4>Clients</h4>
+                            </div>
+
+                            <div class="single-fact col-md-3 col-6 section-space--bottom--30">
+                                <img width="32" height="60" src="assets/img/icons/funfact-success.webp" alt="">
+                                <h1 class="counter">114</h1>
+                                <h4>Success</h4>
+                            </div>
+
+                            <div class="single-fact col-md-3 col-6 section-space--bottom--30">
+                                <img width="46" height="60" src="assets/img/icons/funfact-award.webp" alt="">
+                                <h1 class="counter">109</h1>
+                                <h4>Awards</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of fun fact area  ====================-->
+    <!--====================  testimonial slider area ====================-->
+    <h2 style="color:#f0542d; text-align:center; margin-top:170px;">Our Testimonial</h2><span class="title-icon"></span>
+    <div class="testimonial-slider-area testimonial-slider-area-bg section-space--inner--120 bg-img"
+        data-bg="assets/img/backgrounds/testimonial.jpg" style="margin-top:20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 m-auto">
+                    <div class="testimonial-slider">
+                        <div class="testimonial-slider__container-area">
+                            <div class="swiper-container testimonial-slider__container">
+                                <div class="swiper-wrapper testimonial-slider__wrapper">
+                                    <div class="swiper-slide testimonial-slider__single-slide">
+                                        <div class="author">
+                                            <div class="author__image">
+                                                <img width="100" height="100" src="assets/img/testimonial/1.jpg" alt="">
+                                            </div>
+                                            <div class="author__details">
+                                                <h4 class="name">Marc Benioff</h4>
+                                                <div class="designation">Chairman and CEO of Salesforce</div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            "The best mask I have ever used for exfoliating my face. It's quite gritty
+                                            so
+                                            I only use it a couple of times a week, however it is still gentle enough
+                                            not to irritate my sensitive skin... I find the best way to use it is in the
+                                            shower in the morning. I apply it about 10 minutes before hopping in the
+                                            shower and then wash it off."
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial-slider__single-slide">
+                                        <div class="author">
+                                            <div class="author__image">
+                                                <img width="100" height="100" src="assets/img/testimonial/2.jpg" alt="">
+                                            </div>
+                                            <div class="author__details">
+                                                <h4 class="name">John Doe</h4>
+                                                <div class="designation">Associate</div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            "We developed a great partnership with Orbit Media and their dedication to
+                                            our website is evident in all aspects of the site. We appreciate their
+                                            attention to detail and creative approach to bringing our new exhibit to
+                                            life online."
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide testimonial-slider__single-slide">
+                                        <div class="author">
+                                            <div class="author__image">
+                                                <img width="100" height="100" src="assets/img/testimonial/3.jpg" alt="">
+                                            </div>
+                                            <div class="author__details">
+                                                <h4 class="name">Sunil Dave</h4>
+                                                <div class="designation">Developer</div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            At WPBeginner, Astra is one of our top WordPress theme picks because not
+                                            only does it look great, but it's also optimized for performance. The best
+                                            part is that Astra comes with hundreds of professionally designed templates
+                                            for just about every industry, and it integrates with popular drag & drop
+                                            page builders which makes it super easy for non- techy users to build a
+                                            website.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of testimonial slider area  ====================-->
+    <!--====================  brand logo area ====================-->
+    <!--<div class="brand-logo-slider-area section-space--inner--60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                     brand logo slider
+                    <div class="brand-logo-slider__container-area">
+                        <div class="swiper-container brand-logo-slider__container">
+                            <div class="swiper-wrapper brand-logo-slider__wrapper">
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="152" height="51" src="assets/img/brand-logo/1.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="199" height="51" src="assets/img/brand-logo/2.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="217" height="51" src="assets/img/brand-logo/3.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="225" height="51" src="assets/img/brand-logo/4.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="152" height="51" src="assets/img/brand-logo/1.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="199" height="51" src="assets/img/brand-logo/2.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="217" height="51" src="assets/img/brand-logo/3.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide brand-logo-slider__single">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img width="225" height="51" src="assets/img/brand-logo/4.webp"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    ====================  End of brand logo area  ====================-->
+    <!--====================  footer area ====================-->
+    <div class="footer-area dark-bg" style="margin-top:100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content-wrapper section-space--inner--100">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-12">
+                                <!-- footer intro wrapper -->
+                                <div class="footer-intro-wrapper">
+                                    <div class="footer-logo">
+                                        <a href="#">
+                                            <img width="199" height="44" src="assets/img/logo/logo-light.png"
+                                                class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="footer-desc">
+                                        Contact Us page provides guidance for existing customers and offers an overview
+                                        of your brand for new visitors.
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
+                                <!-- footer widget -->
+                                <div class="footer-widget">
+                                    <h4 class="footer-widget__title">Nav-Link</h4>
+                                    <ul class="footer-widget__navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="our products.html">Our Products</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
+                                <!-- footer widget -->
+                                <div class="footer-widget">
+                                    <h4 class="footer-widget__title">Our Products</h4>
+                                    <ul class="footer-widget__navigation">
+                                        <li><a href="RMC.html">RMC</a></li>
+                                        <li><a href="TMT.html">TMT</a></li>
+                                        <li><a href="AAC BLOCKS.html">AAC Blocks</a></li>
+                                        <li><a href="LED LIGHTS.html">Led Lights</a></li>
+                                        <li><a href="REMOTE CONTROL SWITCH.html">Remote Control Switch</a></li>
+                                        <li><a href="WIRES.html">Wires</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 offset-xl-1 col-lg-3 col-md-4">
+                                <!-- footer widget -->
+                                <div class="footer-widget mb-0">
+                                    <h4 class="footer-widget__title">CONTACT US</h4>
+                                    <div class="footer-widget__content">
+                                        <p class="address"><b style="color: #f0542d;">Address:- </b>SAI BABA NAGAR
+                                            Borivali (W), Mumbai- 400092</p>
+                                        <ul class="contact-details">
+                                            <span style="color:#f0542d;">Phone:</span>+91 98190 89299
+                                            <span style="color: #f0542d;">Email:</span>adrenterprises77@gmail.com
+                                            <span style="color: #f0542d;">Email:</span>adrgroup17@gmail.com
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright-wrapper">
+            <div class="footer-copyright text-center">
+                <p class="copyright-text" style="font-size: 14px;">Copyright ADR Enterprise Privacy | Integrity @ 2023
+                    All Right Reserved By<a href="http://360digit.in/" style="color: #f0542d;"> 360Digit.in</a></p>
+            </div>
+        </div>
+    </div>
+    <!--====================  End of footer area  ====================-->
+    <!--=======  offcanvas mobile menu  =======-->
+
+    <div class="offcanvas-mobile-menu" id="mobile-menu-overlay">
+        <a href="javascript:void(0)" class="offcanvas-menu-close" id="mobile-menu-close-trigger">
+            <i class="ion-android-close"></i>
+        </a>
+
+        <div class="offcanvas-wrapper">
+
+            <div class="offcanvas-inner-content">
+                <div class="offcanvas-mobile-search-area">
+                    <form action="#">
+                        <input type="search" placeholder="Search ...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="our products.html">Our Products</a>
+                            <ul class="sub-menu">
+                                <li><a href="RMC.html">RMC</a></li>
+                                <li><a href="TMT.html">TMT</a></li>
+                                <li><a href="AAC BLOCKS.html">AAC Blocks</a></li>
+                                <li><a href="LED LIGHTS.html">Led Lights</a></li>
+                                <li><a href="REMOTE CONTROL SWITCH.html">Remote Control Switch</a></li>
+                                <li><a href="WIRES.html">Wires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="offcanvas-widget-area">
+                    <div class="off-canvas-contact-widget">
+                        <div class="header-contact-info">
+                            <ul class="header-contact-info__list">
+                                <li><i class="ion-android-phone-portrait"></i> <a href="tel://12452456012">+91 98190
+                                        89299
+                                    </a></li>
+                                <li><i class="ion-android-mail"></i> <a
+                                        href="mailto:info@yourdomain.com">adrenterprises77@gmail.com</a></li>
+                                <li><i class="ion-android-mail"></i> <a
+                                        href="mailto:info@yourdomain.com">adrgroup17@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Off Canvas Widget Social Start-->
+                    <div class="off-canvas-widget-social">
+                        <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" title="Youtube"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+                    </div>
+                    <!--Off Canvas Widget Social End-->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--=======  End of offcanvas mobile menu  =======-->
+    <!--====================  scroll top ====================-->
+    <a href="#" class="scroll-top" id="scroll-top">
+        <i class="ion-android-arrow-up"></i>
+    </a>
+    <!--====================  End of scroll top  ====================-->
+    <!-- JS
+============================================ -->
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="assets/js/vendor/popper.min.js"></script>
+
+    <!-- Swiper Slider JS -->
+    <script src="assets/js/plugins/swiper.min.js"></script>
+
+    <!-- Light gallery JS -->
+    <script src="assets/js/plugins/lightgallery.min.js"></script>
+
+    <!-- Light gallery video JS -->
+    <script src="assets/js/plugins/lg-video.min.js"></script>
+
+    <!-- Waypoints JS -->
+    <script src="assets/js/plugins/waypoints.min.js"></script>
+
+    <!-- Counter up JS -->
+    <script src="assets/js/plugins/counterup.min.js"></script>
+
+    <!-- Mailchimp JS -->
+    <script src="assets/js/plugins/mailchimp-ajax-submit.min.js"></script>
+
+    <!-- Plugins JS (Please remove the comment from below plugins.min.js for better website load performance and remove plugin js files from avobe) -->
+
+    <!--
+<script src="assets/js/plugins/plugins.min.js"></script>
+-->
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=919819089299&text=Hi" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+
+</body>
+
+</html>
